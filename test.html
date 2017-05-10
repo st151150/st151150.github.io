@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/57CF0D2C-0BD8-A04C-9D40-34B57D5A884D/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/D488A5D75B43-04D9-C40A-8DB0-C2D0FC75/abn/main.css"/><script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="frontpage">
+            <div data-role="header">
+                <h1>Kehrvin:Spot</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <p>You spotted a wild Kehrvin? <a href="#upload">Let us know!</a></p>
+            </div>
+
+            <div data-role="footer">
+                <h1>Kehrvin:Spot</h1>
+
+            </div>
+        </div>
+
+        <div data-role="page" id="upload">
+            <div data-role="header">
+                <h1>Kehrvin:Spot</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <p>Upload a image with Location</p>
+                <input id="inpPicture" type="file" accept="image/*" /> <img id="yourPic" alt="" /><script type="text/javascript">// 
+                 if(event.target.files.length == 1 && 
+           event.target.files[0].type.indexOf("image/") == 0) {
+            $("#yourPic").attr("src",URL.createObjectURL(event.target.files[0]));
+        }
+            }); 
+
+        </script>
+                <a href="#frontpage">Back</a>
+            </div>
+
+            <div data-role="footer">
+                <h1>Kehrvin:Spot</h1>
+            </div>
+        </div> 
+
+    </body>
+</html>
